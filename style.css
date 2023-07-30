@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.circle1 {
+  position: absolute;
+  border-radius: 50%;
+  animation: cicle1 linear 5s;
+}
+
+.glass {
+  border-radius: 50px;
+  height: 90vh;
+  width: 90vw;
+  background: rgba(255, 255, 255, .2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  z-index: 100;
+}
+
+
+@keyframes cicle1 {
+  0% {
+    top: -100%;
+  }
+  90%{
+
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    top: 100%;
+  }
+}
